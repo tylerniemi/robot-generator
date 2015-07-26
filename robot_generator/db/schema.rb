@@ -12,13 +12,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20140707111715) do
-
-  create_table "widgets", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "stock"
+ create_table "robots_data", force: true do |t|
+    t.string   "robot_name"
+    t.text     "robot_description"
+    t.string  "team"
+    t.string  "color"
+    t.string  "robot_type"
+    t.string  "fuel"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
 end
