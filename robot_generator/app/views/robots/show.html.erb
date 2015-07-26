@@ -1,0 +1,36 @@
+<div class="container">
+
+<p>
+  <strong>Robot Name:</strong>
+  <%= @robot_data.robot_name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @robot_data.robot_description %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @robot_data.team %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @robot_data.color %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @robot_data.robot_type %>
+</p>
+
+<p>
+  <strong>Fuel:</strong>
+  <%= @robot_data.fuel %>
+</p>
+
+<%= link_to 'Edit', edit_robot_path(@robot_data) %> |
+<%= link_to 'Back', robots_path %>
+
+</div>

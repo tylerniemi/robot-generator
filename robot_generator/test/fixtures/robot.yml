@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  robot_name: MyString
+  robot_description: MyText
+  team: MyString
+  color: MyString
+  robot_type: MyString
+  fuel: MyString
+
+two:
+  robot_name: MyString
+  robot_description: MyText
+  team: MyString
+  color: MyString
+  robot_type: MyString
+  fuel: MyString

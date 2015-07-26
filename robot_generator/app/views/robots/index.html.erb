@@ -1,0 +1,39 @@
+<div class="container">
+<h1>Robots</h1>
+
+<table class="robot_headers">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Team</th>
+      <th>Color</th>
+      <th>Type</th>
+      <th>Fuel</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody id="robot_details">
+    <% @robots_data.each do |robot| %>
+      <tr>
+        <td><%= robot.robot_name %></td>
+        <td><%= robot.robot_description %></td>
+        <td><%= robot.team %></td>
+        <td><%= robot.color %></td>
+        <td><%= robot.robot_type %></td>
+        <td><%= robot.fuel %></td>
+        <td><%= link_to 'Show', robot_path(robot) %></td>
+        <td><%= link_to 'Edit', edit_robot_path(robot) %></td>
+        <td><%= link_to 'Destroy', robot_path(robot),
+        method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Robot', new_robot_path %>
+
+</div>
